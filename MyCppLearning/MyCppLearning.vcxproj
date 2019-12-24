@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MyCppLearning.cpp" />
+    <ClCompile Include="程序清单3.cpp" />
     <ClCompile Include="程序清单2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
