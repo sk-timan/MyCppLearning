@@ -145,14 +145,109 @@ void ProgramList_3_8(void)
 }
 
 
-//
+//3.14 typecast.cpp
+
+void ProgramList_3_14(void)
+{
+	int auks, bats, coots;
+
+	auks = 19.99 + 11.99;            //强制类型转换，将float转换为int时将截短
+	bats = (int)19.99 + (int)11.99;   //old C syntax
+	coots = int(19.99) + int(11.99);  //new C++ syntax
+
+	cout << "auks = " << auks << ",bats = " << bats;
+	cout << ",coots = " << coots << endl;
+
+	char ch = 'Z';
+
+	cout << "The code for " << ch << " is ";
+	cout << int(ch) << endl;
+	cout << "Yes, the code is ";
+	cout << static_cast<int>(ch) << endl;
+}
 
 
+/*练习题*/
+/*--------------------------------------------*/
+//3.7.1
+
+void Exam_3_1(void)
+{
+	int a;
+	const double n = 0.3937008;
+
+	cout << "输入自己的身高(cm)：___\b\b\b";
+	cin >> a;
+	cout << "你的身高为" << a << "cm,相当于" << a * n << "in.";
+}
+
+//3.7.2
 
 
+void Exam_3_2(void)
+{
+	int ft, in, lb;
+	const int fttoin = 12;
+	const double intom = 0.0254;
+	const double kgtolb = 2.2;
+
+	cout << "请输入你的身高(ft)：__\b\b";
+	cin >> ft;
+	cout << "(in):__\b\b";
+	cin >> in;
+	cout << "再输入你的体重(lb)：__\b\b";
+	cin >> lb;
+
+	cout << "身高= " << (ft * fttoin + in) * intom << endl;
+	cout << "体重= " << lb / kgtolb << endl;
+	double BMI = lb / kgtolb / ((ft * fttoin + in) * intom * (ft * fttoin + in) * intom);
+	cout << "你的体重指数(BMI)= " << BMI << "." << endl;
+}
+
+//3.7.3
 
 
+void Exam_3_3(void)
+{
+	int degrees, minutes, seconds;
 
+	cout << "Enter the degress:___\b\b\b ";
+	cin >> degrees;
+	cout << "Enter the minutes of arc:___\b\b\b";
+	cin >> minutes;
+	cout << "Enter the seconds of arc:___\b\b\b";
+	cin >> seconds;
+
+	cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = "
+		<< degrees + minutes * (1.0 / 60.0) + seconds * (1.0 / 360.0) << '.' << endl;
+}
+
+//3.7.4
+
+
+void Exam_3_4(void)
+{
+	long int seconds;
+
+	cout << "Enter the number of seconds:____\b\b\b\b";
+	cin >> seconds;
+
+	cout << seconds << " seconds = " << seconds / 60 / 60 / 24 << " days, "
+		<< seconds / 60 / 60 % 24 << " hours, " << seconds / 60 % 60 << " minutes, "
+		<< seconds % 60 << " seconds.";
+	cout << 310783781.0 / 6898758899 << endl;
+}
+
+//3.7.7
+
+
+void Exam_3_7(void)
+{
+	double L;
+	cout << "Enter the car's 耗油量(L/100km)：___\b\b\b";
+	cin >> L;
+	cout << L << " L/100km = " << 62.14 / (L / 3.875) << " mpg." << endl;
+}
 
 
 
