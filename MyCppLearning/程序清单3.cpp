@@ -151,7 +151,7 @@ void ProgramList_3_14(void)
 {
 	int auks, bats, coots;
 
-	auks = 19.99 + 11.99;            //强制类型转换，将float转换为int时将截短
+	auks = 19.99 + 11.99;            //强制类型转换，将double转换为int时将丢失精度
 	bats = (int)19.99 + (int)11.99;   //old C syntax
 	coots = int(19.99) + int(11.99);  //new C++ syntax
 
@@ -198,9 +198,13 @@ void Exam_3_2(void)
 	cout << "再输入你的体重(lb)：__\b\b";
 	cin >> lb;
 
-	cout << "身高= " << (ft * fttoin + in) * intom << endl;
+	cout << "身高= " << (long long(ft) * fttoin + in) * intom << endl;
 	cout << "体重= " << lb / kgtolb << endl;
-	double BMI = lb / kgtolb / ((ft * fttoin + in) * intom * (ft * fttoin + in) * intom);
+
+	double BMI = lb / kgtolb / 
+		((long long(ft) * fttoin + in) * intom * 
+		(long long(ft) * fttoin + in) * intom);   // 8 byte double / 8 byte long long
+
 	cout << "你的体重指数(BMI)= " << BMI << "." << endl;
 }
 
