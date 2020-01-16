@@ -4,12 +4,12 @@
 using namespace std;
 
 
-void ProgramList_4_14();
+void Exam_4_10();
 
 
 int main(void)
 {
-    ProgramList_4_14();
+    Exam_4_10();
 
     return 0;
 }
