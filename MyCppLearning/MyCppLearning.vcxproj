@@ -151,6 +151,8 @@
     <ClCompile Include="程序清单3.cpp" />
     <ClCompile Include="程序清单2.cpp" />
     <ClCompile Include="程序清单4.cpp" />
+    <ClCompile Include="程序清单5.cpp" />
+    <ClCompile Include="程序清单6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
