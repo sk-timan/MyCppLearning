@@ -236,8 +236,8 @@ void ProgramList_5_18(void)
 	{
 		cout << ch;
 		++count;
-		cin.get(ch);
-	};                                        //需按下ctrl+z来模拟文件尾
+		cin.get(ch);							//需按下ctrl+z来模拟文件尾
+	};                                        
 
 	cout << endl << count << " characters read\n";
 
