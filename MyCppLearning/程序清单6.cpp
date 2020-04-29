@@ -903,7 +903,30 @@ void Exam_6_9(void)
 }
 
 
+void Exam_6_10()
+{
+	char filename[80];
+	ifstream inFile;
+	cout << "Please Enter your file  name: ";
+	cin.getline(filename, 80);
+	inFile.open(filename);
 
+	if (!inFile.is_open())
+	{
+		cout << "Open file Failed!!\n";
+		exit(1);
+	}
+
+	char ch;
+
+	inFile >> ch;
+	while (inFile.good())
+	{
+		cout << ch;
+		inFile >> ch;
+	}
+	inFile.close();
+}
 
 
 
