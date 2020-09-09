@@ -189,6 +189,7 @@
     <ClCompile Include="程序清单5.cpp" />
     <ClCompile Include="程序清单6.cpp" />
     <ClCompile Include="程序清单7.cpp" />
+    <ClCompile Include="程序清单8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MacroTest.h" />
