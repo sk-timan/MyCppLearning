@@ -3,6 +3,7 @@
 #include <cctype>				//prototypes for character functions
 #include <fstream>				//for file I/O
 #include <cstdlib>              //surppot for exit()
+#include "pch.h"
 
 
 using namespace std;
@@ -729,7 +730,7 @@ void Exam_6_6(void)
 	{
 		cout << "#" << i << ":\n";
 		cout << "Name: ";
-		cin >> donatelist[i].name;
+		//cin >> donatelist[i].name;
 		cout << "amount: ";
 		cin >> donatelist[i].amount;
 	}
@@ -760,7 +761,7 @@ void Exam_6_6(void)
 	else
 		for (int i = 0; i < GPcount; i++)
 		{
-			cout << GrandPatrons[i].name << "\t";
+			//cout << GrandPatrons[i].name << "\t";
 			cout << GrandPatrons[i].amount << endl;
 		}
 
@@ -770,7 +771,7 @@ void Exam_6_6(void)
 	else
 		for (int i = 0; i < Pcount; i++)
 		{
-			cout << Patrons[i].name << "\t";
+			//cout << Patrons[i].name << "\t";
 			cout << Patrons[i].amount << endl;
 		}
 	delete[] donatelist;
@@ -850,7 +851,7 @@ void Exam_6_9(void)
 		inFile.get();
 		inFile.getline(line, 81);
 		donatelist[i].name = line;
-		cout << donatelist[i].name <<"\n";
+		//cout << donatelist[i].name <<"\n";
 		inFile >> donatelist[i].amount;
 		cout << donatelist[i].amount << endl;
 		i++;
@@ -883,7 +884,7 @@ void Exam_6_9(void)
 	else
 		for (int i = 0; i < GPcount; i++)
 		{
-			cout << GrandPatrons[i].name << "\t";
+			//cout << GrandPatrons[i].name << "\t";
 			cout << GrandPatrons[i].amount << endl;
 		}
 
@@ -893,7 +894,7 @@ void Exam_6_9(void)
 	else
 		for (int i = 0; i < Pcount; i++)
 		{
-			cout << Patrons[i].name << "\t";
+			//cout << Patrons[i].name << "\t";
 			cout << Patrons[i].amount << endl;
 		}
 	delete[] donatelist;
