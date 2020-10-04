@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>            //c类头文件， 同<math.h>
+#include "pch.h"
 
 using namespace std;
 

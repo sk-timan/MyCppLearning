@@ -4,7 +4,7 @@
 #include <ctime>                    //describes clock() function, clock_t type
 #include <array>
 #include <cmath>
-
+#include "pch.h"
 using namespace std;
 
 

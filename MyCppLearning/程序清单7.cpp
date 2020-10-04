@@ -1,8 +1,5 @@
 #include <iostream>
-#include <cmath>
-#include <string>
-#include <array>
-
+#include "pch.h"
 using namespace std;
 
 //7.1 calling.cpp -- defining, prototyping, and calling a function
