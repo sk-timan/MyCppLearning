@@ -43,7 +43,7 @@ public:
 
 	//任何不会修改数据成员的函数都应该声明为const类型，const关键字放在函数括号的后面
 	T top() const;			//返回栈顶元素
-	bool empty() const { return elems.empty() };
+	bool empty() const { return elems.empty(); };
 
 };
 

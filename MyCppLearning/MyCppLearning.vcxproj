@@ -23,13 +23,13 @@
     <ProjectGuid>{73F24362-3780-4126-806E-4522B9781B5D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MyCppLearning</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -97,7 +97,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>F:\MyCPPSpace\StaticMath\Debug;F:\MyCPPSpace\MathLibrary\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>StaticMathLibrary.lib;MathLibrary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -182,6 +182,7 @@
     <ClCompile Include="MyTestClass_1.cpp" />
     <ClCompile Include="MyTestClass_2.cpp" />
     <ClCompile Include="MyTestClass_3.cpp" />
+    <ClCompile Include="MyThreadTest.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="程序清单3.cpp" />
     <ClCompile Include="程序清单2.cpp" />
@@ -198,6 +199,9 @@
     <ClInclude Include="MyTestClass_2.h" />
     <ClInclude Include="MyTestClass_3.h" />
     <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

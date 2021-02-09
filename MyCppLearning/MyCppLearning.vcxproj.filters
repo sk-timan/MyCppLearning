@@ -51,6 +51,12 @@
     <ClCompile Include="MyTemplate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="程序清单8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyThreadTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MacroTest.h">
@@ -71,5 +77,8 @@
     <ClInclude Include="MyTemplate.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include "pch.h"
 
 using namespace std;
@@ -16,10 +15,11 @@ static int getint() { return 444; };
 int MyTestClass_3::MyStaticValue = 111;
 int MyTestClass_3::MyPrivateStaticValue = 100;
 extern const int T3InlineTest();
-MyDllClass DllClassRef;
+//MyDllClass DllClassRef;
+
+void Func_ThreadTest();
 
 //int &a = 2;  //左值引用，绑定到右值，失败
-
 int b = 2;
 //const int &c = b;
 
@@ -122,7 +122,7 @@ int main(void)
 	*/
 
 	//TemplateFuncTest();
-
+	Func_ThreadTest();
 
 	return 0;
 }
