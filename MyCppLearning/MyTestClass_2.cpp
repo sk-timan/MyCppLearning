@@ -1,5 +1,5 @@
-#include "MyTestClass_2.h"
 #include "pch.h"
+
 static float bValue = 0.2f;
 extern int ExA;
 // c风格定义函数无法被重定义
@@ -20,6 +20,7 @@ void MyTestClass_2::Func_2()
 	Func_1();
 	bValue++;            
 	std::cout << bValue << std::endl;
+	std::cout << "class_2 Static bValue Address: " << &bValue << endl;
 }
 
 float MyTestClass_2::GetB()

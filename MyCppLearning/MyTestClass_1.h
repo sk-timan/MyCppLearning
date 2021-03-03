@@ -5,6 +5,9 @@
 
 #define HCOUT_1 std::cout << "_1.h Load!!"<< endl;
 
+void printExaAddress();
+
+//不要在头文件定义全局变量，否则链接会报重定义
 
 
 class MyTestClass_1

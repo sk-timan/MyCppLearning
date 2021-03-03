@@ -1,6 +1,8 @@
 #include "pch.h"
+#include "MyTemplate.h"
 
 const int* TempZTYPrt = NULL;
+inline static int getint() { return 3; };
 
 void TemplateFuncTest()
 {
@@ -31,11 +33,20 @@ void TemplateClassTest()
 		Stack<int>		intStack;	//int 类型栈
 		Stack<string>	stringStack;//string 类型栈
 
+		int a = 5;
+		cout << "a Address: " << &a << endl;
+
 		//操作 int 类型的栈
-		intStack.push(7);
+		intStack.push(++a);
 		cout << intStack.top() << endl;
+
+		//操作string类型的栈
+		stringStack.push("hello");
+		cout << stringStack.top() << endl;
 		stringStack.pop();
 		stringStack.pop();
+
+
 	}
 	catch (exception const& ex)
 	{
@@ -43,3 +54,4 @@ void TemplateClassTest()
 		//return -1;
 	}
 }
+

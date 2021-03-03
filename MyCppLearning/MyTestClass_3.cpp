@@ -1,7 +1,8 @@
-#include "MyTestClass_3.h"
 #include "pch.h"
 
 extern const int T3InlineTest();
+
+MyTestClass_3 T3Ref;
 
 MyTestClass_3::MyTestClass_3()
 {
@@ -9,7 +10,7 @@ MyTestClass_3::MyTestClass_3()
 	
 }
 
-inline void MyTestClass_3::Func_3()
+void MyTestClass_3::Func_3()    //这里无法inline
 {
 	std::cout << "This is Func_3! It's static function. \n";
 	std::cout << "My static value = " << MyStaticValue << std::endl;
@@ -19,9 +20,10 @@ inline void MyTestClass_3::Func_3()
 
 }
 
-inline void MyTestClass_3::Test3Func()
+void MyTestClass_3::Test3Func()
 {
 	std::cout << "This is Test3 Member Func!!\n";
+	MyTestClass_3::MyStaticValue = 12;
 }
 
 
@@ -70,3 +72,9 @@ void Test3Func(int a, MyTestClass_3& T3Ref)
 	std::cout << T3Ref.NormalInt << std::endl;
 }
 
+void Class3Test()
+{
+	MyTestClass_3 T3;
+	cout << "ClassT3 Address: " << &T3.MyStaticValue << endl;
+}
+int MyTestClass_3::MyStaticValue = 112;

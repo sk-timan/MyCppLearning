@@ -1,11 +1,12 @@
 ﻿
 #include <iostream>
 #include "pch.h"
+#include "MyTemplate.h"
 
 using namespace std;
 
 extern int ExA;
-static double bValue = 0.3;
+static float bValue = 0.3;
 extern const char *c = "I'm Char c";
 extern float foo(float x, float y);
 /*采用c方法编译*/
@@ -13,10 +14,24 @@ extern float foo(float x, float y);
 
 extern const char* GetCharC();
 static int getint() { return 444; };
-int MyTestClass_3::MyStaticValue = 111;
+//int MyTestClass_3::MyStaticValue = 111;
 int MyTestClass_3::MyPrivateStaticValue = 100;
 extern const int T3InlineTest();
 MyDllClass DllClassRef;
+int32 GetGCFunctionIndex(bool, bool);
+void oops();
+void f();
+int MutexTest();
+void SingletonTest();
+
+
+//static void printExaAddress(){};
+extern MyTestClass_3 T3Ref;
+void Class3Test();
+void ThreadTest();
+void MyTaskTest();
+void MyEventTest();
+
 
 //int &a = 2;  //左值引用，绑定到右值，失败
 
@@ -41,15 +56,20 @@ int getdata(int &&num)
 
 int main(void)
 {
-	//MyTestClass_1 Test;
-	//MyTestClass_2 Test2;
-	//MyTestClass_3 Test3;
+	MyTestClass_1 Test;
+	MyTestClass_2 Test2;
+	MyTestClass_3 Test3;
+	MyTestClass_3 Test4;
+	TAtomicBase_Basic<uint32> T1;
 
-	//cout << bValue << " " << ExA << endl;
-	//Test.Func_1();
-	//cout << getint() << endl;
-	//Test2.Func_2();
-	//cout << Test2.GetB()<< endl;
+	/*
+	cout << bValue << " " << ExA << endl;
+	Test.Func_1();
+	cout << getint() << endl;
+	Test2.Func_2();
+	cout << "MycppLearing bValue Address: " << &bValue << endl;
+	cout << Test2.GetB()<< endl;
+	*/
 	//cout << foo(1,2) + var << endl;
 	//cout << ExCharTest << endl;
 	//cout << bValue << endl;
@@ -121,8 +141,58 @@ int main(void)
 	cout << *pnum << endl;
 	*/
 
-	//TemplateFuncTest();
+	/*
+	cout << "Test3 Static Value = " << Test3.MyStaticValue << endl;
+	cout << "Test4 Static Value = " << Test4.MyStaticValue << endl;
+	Test3.MyStaticValue++;
+	cout << "Test3 Static Value = " << Test3.MyStaticValue << endl;
+	cout << "Test4 Static Value = " << Test4.MyStaticValue << endl;
+	Test4.MyStaticValue++;
+	cout << "Test3 Static Value = " << Test3.MyStaticValue << endl;
+	cout << "Test4 Static Value = " << Test4.MyStaticValue << endl;
+	cout << "Test3 Static Value = " << Test3.MyStaticValue << endl;
+	cout << "TestClast_3 Static Value = " << MyTestClass_3::MyStaticValue << endl;
+	cout << "Test3 Static Value Address " << &Test3.MyStaticValue << endl;
+	cout << "Test4 Static Value Address " << &Test4.MyStaticValue << endl;
+	cout << "TestClast_3 Static Value Address " << &MyTestClass_3::MyStaticValue << endl;
+	cout << "Test3 Normal Int Address " << &Test3.NormalInt<< endl;
+	cout << "Test4 Normal Int Address " << &Test4.NormalInt << endl;
+	cout << "TestClast_3 Normal Int Address " << &MyTestClass_3::NormalInt << endl;
+	Class3Test();
+	cout << "T3Ref Static Value Address " << &T3Ref.MyStaticValue << endl;
+	*/
 
+	//cout << &ExA << endl;    //拥有外部链接的变量地址是一样的
+	//printExaAddress();
+
+	//TemplateFuncTest();
+	//TemplateClassTest();
+
+	//MoveSemanticsTest();
+
+	//uint32 LocalEventStartCycles = T1.Load();
+	//cout << LocalEventStartCycles << endl;
+
+	//GetGCFunctionIndex(true, true);
+
+	//ThreadTest();
+
+	//MyTaskTest();
+
+    //oops();
+	//while (true) {};
+
+	//f();
+
+	//cout << MyTestClass_3::MyStaticValue;
+	//Test3.Test3Func();
+	//cout << MyTestClass_3::MyStaticValue;
+
+	//MyEventTest();
+
+	//MutexTest();
+	
+	SingletonTest();
 
 	return 0;
 }
@@ -135,4 +205,11 @@ float foo(float x, float y)
 double foo(double x, double y)
 {
 	return x * y;
+}
+
+int32 GetGCFunctionIndex(bool bParallel, bool bWithClusters)
+{
+	int32 a = int32(bParallel);
+	auto b = (int32(bWithClusters) << 1);
+	return (int32(bParallel) | (int32(bWithClusters) << 1));
 }

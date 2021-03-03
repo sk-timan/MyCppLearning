@@ -1,5 +1,8 @@
 #include <iostream>
-#include "pch.h"
+#include <string>
+#include <array>
+#include <pch.h>
+
 using namespace std;
 
 //7.1 calling.cpp -- defining, prototyping, and calling a function
@@ -353,7 +356,7 @@ void ProgramList_7_15(void)
 	void show(array<double, Seasons> da);
 
 	array <double, Seasons> expenses;
-	fill(&expenses);                              //使用指针直接处理原始对象，避免了修改值时还需复制的繁琐
+	fill(&expenses);           //使用指针直接处理原始对象，避免了修改值时还需复制的繁琐
 	show(expenses);
 
 }

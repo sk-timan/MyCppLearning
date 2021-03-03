@@ -5,10 +5,13 @@
 #include "MyTestClass_3.h"
 #include "MathLibrary.h"
 #include "StaticMathLibrary.h"
-#include "MyTemplate.h"
+#include "MoveSemantics.h"
+#include "GenericPlatform.h"
 
 
 
 #define PCH_H
 
 #define ENUM_TO_STRING(var) (#var)
+
+typedef FGenericPlatformTypes FPlatformTypes;

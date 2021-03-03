@@ -51,6 +51,27 @@
     <ClCompile Include="MyTemplate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MoveSemantics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="程序清单8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyThreadTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTaskTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEventTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMutexTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySingletonTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MacroTest.h">
@@ -69,6 +90,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveSemantics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericPlatform.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

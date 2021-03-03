@@ -23,13 +23,13 @@
     <ProjectGuid>{73F24362-3780-4126-806E-4522B9781B5D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MyCppLearning</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -177,11 +177,17 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MoveSemantics.cpp" />
     <ClCompile Include="MyCppLearning.cpp" />
+    <ClCompile Include="MyEventTest.cpp" />
+    <ClCompile Include="MyMutexTest.cpp" />
+    <ClCompile Include="MySingletonTest.cpp" />
+    <ClCompile Include="MyTaskTest.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="MyTestClass_1.cpp" />
     <ClCompile Include="MyTestClass_2.cpp" />
     <ClCompile Include="MyTestClass_3.cpp" />
+    <ClCompile Include="MyThreadTest.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="程序清单3.cpp" />
     <ClCompile Include="程序清单2.cpp" />
@@ -192,7 +198,9 @@
     <ClCompile Include="程序清单8.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GenericPlatform.h" />
     <ClInclude Include="MacroTest.h" />
+    <ClInclude Include="MoveSemantics.h" />
     <ClInclude Include="MyTemplate.h" />
     <ClInclude Include="MyTestClass_1.h" />
     <ClInclude Include="MyTestClass_2.h" />
