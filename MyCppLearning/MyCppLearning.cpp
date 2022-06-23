@@ -2,6 +2,7 @@
 #include "pch.h"
 #include "MyTemplate.h"
 #include "MyTestClass_4.h"
+#include "MoveSemantics.h"
 #include "Iterator.h"
 
 using namespace std;
