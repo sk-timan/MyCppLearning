@@ -97,7 +97,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>F:\MyCPPSpace\StaticMath\Debug;F:\MyCPPSpace\MathLibrary\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>StaticMathLibrary.lib;MathLibrary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -111,14 +111,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);MATHLIBRARY_EXPORTS;MATHLIBRARY_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\MyCPPSpace\StaticMath\StaticMathLibrary;F:\MyCPPSpace\MathLibrary\MathLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>StaticMathLibrary.lib;MathLibrary.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>F:\MyCPPSpace\StaticMath\Debug;F:\MyCPPSpace\MathLibrary\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
@@ -177,14 +178,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MoveSemantics.cpp" />
+    <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="MyCppLearning.cpp" />
-    <ClCompile Include="MyEventTest.cpp" />
-    <ClCompile Include="MyMutexTest.cpp" />
-    <ClCompile Include="MySingletonTest.cpp" />
-    <ClCompile Include="MyTaskTest.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
-    <ClCompile Include="MyTestClass_4.cpp" />
     <ClCompile Include="MyTestClass_1.cpp" />
     <ClCompile Include="MyTestClass_2.cpp" />
     <ClCompile Include="MyTestClass_3.cpp" />
@@ -199,15 +195,16 @@
     <ClCompile Include="程序清单8.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GenericPlatform.h" />
+    <ClInclude Include="Iterator.h" />
     <ClInclude Include="MacroTest.h" />
-    <ClInclude Include="MoveSemantics.h" />
     <ClInclude Include="MyTemplate.h" />
-    <ClInclude Include="MyTestClass_4.h" />
     <ClInclude Include="MyTestClass_1.h" />
     <ClInclude Include="MyTestClass_2.h" />
     <ClInclude Include="MyTestClass_3.h" />
     <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

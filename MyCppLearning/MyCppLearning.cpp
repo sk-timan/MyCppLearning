@@ -1,8 +1,8 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include "pch.h"
 #include "MyTemplate.h"
 #include "MyTestClass_4.h"
+#include "Iterator.h"
 
 using namespace std;
 
@@ -18,12 +18,9 @@ static int getint() { return 444; };
 //int MyTestClass_3::MyStaticValue = 111;
 int MyTestClass_3::MyPrivateStaticValue = 100;
 extern const int T3InlineTest();
-MyDllClass DllClassRef;
-int32 GetGCFunctionIndex(bool, bool);
-void oops();
-void f();
-int MutexTest();
-void SingletonTest();
+//MyDllClass DllClassRef;
+
+void Func_ThreadTest();
 
 
 //static void printExaAddress(){};
@@ -35,7 +32,6 @@ void MyEventTest();
 
 
 //int &a = 2;  //左值引用，绑定到右值，失败
-
 int b = 2;
 //const int &c = b;
 
@@ -57,20 +53,15 @@ int getdata(int &&num)
 
 int main(void)
 {
-	MyTestClass_1 Test;
-	MyTestClass_2 Test2;
-	MyTestClass_3 Test3;
-	MyTestClass_3 Test4;
-	TAtomicBase_Basic<uint32> T1;
+	//MyTestClass_1 Test;
+	//MyTestClass_2 Test2;
+	//MyTestClass_3 Test3;
 
-	/*
-	cout << bValue << " " << ExA << endl;
-	Test.Func_1();
-	cout << getint() << endl;
-	Test2.Func_2();
-	cout << "MycppLearing bValue Address: " << &bValue << endl;
-	cout << Test2.GetB()<< endl;
-	*/
+	//cout << bValue << " " << ExA << endl;
+	//Test.Func_1();
+	//cout << getint() << endl;
+	//Test2.Func_2();
+	//cout << Test2.GetB()<< endl;
 	//cout << foo(1,2) + var << endl;
 	//cout << ExCharTest << endl;
 	//cout << bValue << endl;
@@ -167,30 +158,9 @@ int main(void)
 	//printExaAddress();
 
 	//TemplateFuncTest();
-	//TemplateClassTest();
+	//Func_ThreadTest();
 
-	//RValueTest();
-	MoveSemanticsTest();
-
-	//uint32 LocalEventStartCycles = T1.Load();
-	//cout << LocalEventStartCycles << endl;
-
-	//GetGCFunctionIndex(true, true);
-
-	//ThreadTest();
-
-	//MyTaskTest();
-
-    //oops();
-	//while (true) {};
-
-	//f();
-
-	//cout << MyTestClass_3::MyStaticValue;
-	//Test3.Test3Func();
-	//cout << MyTestClass_3::MyStaticValue;
-
-	//MyEventTest();
+	Iterator::IteratorTest();
 
 	//MutexTest();
 	
@@ -216,11 +186,4 @@ float foo(float x, float y)
 double foo(double x, double y)
 {
 	return x * y;
-}
-
-int32 GetGCFunctionIndex(bool bParallel, bool bWithClusters)
-{
-	int32 a = int32(bParallel);
-	auto b = (int32(bWithClusters) << 1);
-	return (int32(bParallel) | (int32(bWithClusters) << 1));
 }
