@@ -72,6 +72,9 @@
     <ClCompile Include="MySingletonTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MyTestClass_4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MacroTest.h">
@@ -96,6 +99,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="GenericPlatform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTestClass_4.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -25,8 +25,14 @@ public:
 	~Useless();
 	Useless operator+(const Useless& f) const;
 	//need operator=() in copy and move versions
+
+	Useless& operator=(const Useless& f);		// copy assignment
+	Useless& operator=(Useless&& f);			// move assignment
 	void ShowData() const;
+
 
 };
 
 void MoveSemanticsTest();
+
+void RValueTest();

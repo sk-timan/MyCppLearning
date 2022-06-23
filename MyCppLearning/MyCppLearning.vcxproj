@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -184,6 +184,7 @@
     <ClCompile Include="MySingletonTest.cpp" />
     <ClCompile Include="MyTaskTest.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
+    <ClCompile Include="MyTestClass_4.cpp" />
     <ClCompile Include="MyTestClass_1.cpp" />
     <ClCompile Include="MyTestClass_2.cpp" />
     <ClCompile Include="MyTestClass_3.cpp" />
@@ -202,6 +203,7 @@
     <ClInclude Include="MacroTest.h" />
     <ClInclude Include="MoveSemantics.h" />
     <ClInclude Include="MyTemplate.h" />
+    <ClInclude Include="MyTestClass_4.h" />
     <ClInclude Include="MyTestClass_1.h" />
     <ClInclude Include="MyTestClass_2.h" />
     <ClInclude Include="MyTestClass_3.h" />

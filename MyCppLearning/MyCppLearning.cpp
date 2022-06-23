@@ -2,6 +2,7 @@
 #include <iostream>
 #include "pch.h"
 #include "MyTemplate.h"
+#include "MyTestClass_4.h"
 
 using namespace std;
 
@@ -168,7 +169,8 @@ int main(void)
 	//TemplateFuncTest();
 	//TemplateClassTest();
 
-	//MoveSemanticsTest();
+	//RValueTest();
+	MoveSemanticsTest();
 
 	//uint32 LocalEventStartCycles = T1.Load();
 	//cout << LocalEventStartCycles << endl;
@@ -192,7 +194,16 @@ int main(void)
 
 	//MutexTest();
 	
-	SingletonTest();
+	//SingletonTest();
+
+	//MyTestClass_4 test4;
+	//cout << "MyTestUint's address: " << &test4.MyTestUint << endl;
+	//cout << "MyTestUintPointer's address: " << &test4.MyTestUintPointer << endl;
+	//cout << "MyTestUintPointer_2's address: " << &test4.MyTestUintPointer_2 << endl;
+
+	//TestTopk();
+
+	
 
 	return 0;
 }
