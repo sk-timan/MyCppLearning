@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "pch.h"
+#include "Iterator.h"
 
 using namespace std;
 
@@ -122,7 +123,9 @@ int main(void)
 	*/
 
 	//TemplateFuncTest();
-	Func_ThreadTest();
+	//Func_ThreadTest();
+
+	Iterator::IteratorTest();
 
 	return 0;
 }

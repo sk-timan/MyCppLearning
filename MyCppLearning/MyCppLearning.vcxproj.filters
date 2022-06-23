@@ -57,6 +57,9 @@
     <ClCompile Include="MyThreadTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MacroTest.h">
@@ -75,6 +78,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
