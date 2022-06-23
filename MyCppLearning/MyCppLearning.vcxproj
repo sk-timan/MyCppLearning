@@ -178,13 +178,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="MyCppLearning.cpp" />
-    <ClCompile Include="MyEventTest.cpp" />
-    <ClCompile Include="MyMutexTest.cpp" />
-    <ClCompile Include="MySingletonTest.cpp" />
-    <ClCompile Include="MyTaskTest.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
-    <ClCompile Include="MyTestClass_4.cpp" />
     <ClCompile Include="MyTestClass_1.cpp" />
     <ClCompile Include="MyTestClass_2.cpp" />
     <ClCompile Include="MyTestClass_3.cpp" />
@@ -199,10 +195,9 @@
     <ClCompile Include="程序清单8.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Iterator.h" />
     <ClInclude Include="MacroTest.h" />
-    <ClInclude Include="MoveSemantics.h" />
     <ClInclude Include="MyTemplate.h" />
-    <ClInclude Include="MyTestClass_4.h" />
     <ClInclude Include="MyTestClass_1.h" />
     <ClInclude Include="MyTestClass_2.h" />
     <ClInclude Include="MyTestClass_3.h" />

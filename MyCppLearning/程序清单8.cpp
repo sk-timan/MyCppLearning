@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "pch.h"
 using namespace std;
 
 //8.1 inline.cpp -- using an inline function
