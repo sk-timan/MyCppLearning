@@ -13,4 +13,4 @@
 
 #define ENUM_TO_STRING(var) (#var)
 
-typedef FGenericPlatformTypes FPlatformTypes;
+//typedef FGenericPlatformTypes FPlatformTypes;

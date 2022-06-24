@@ -21,7 +21,7 @@ int MyTestClass_3::MyPrivateStaticValue = 100;
 extern const int T3InlineTest();
 //MyDllClass DllClassRef;
 
-void Func_ThreadTest();
+//void Func_ThreadTest();
 
 
 //static void printExaAddress(){};

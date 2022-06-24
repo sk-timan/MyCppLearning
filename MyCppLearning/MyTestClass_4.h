@@ -1,4 +1,5 @@
 #pragma once
+#include "GenericPlatform.h"
 
 typedef uint16 UINT16, * PUINT16;
 

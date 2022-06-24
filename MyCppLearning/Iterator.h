@@ -39,8 +39,8 @@ template <typename Type>
 class TIterator
 {
 public:
-	Iterator() : pt(nullptr) {};
-	Iterator(Type* node) : pt(node) {};
+	TIterator() : pt(nullptr) {};
+	TIterator(Type* node) : pt(node) {};
 
 	Type operator*() const noexcept { return const_cast<Type>(operator*()); };
 
