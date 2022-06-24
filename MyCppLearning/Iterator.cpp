@@ -2,8 +2,6 @@
 #include "Iterator.h"
 #include <vector>
 
-#define NUM_ARR 6
-
 Iterator& Iterator::operator++()
 {
 	pt = pt->p_next;

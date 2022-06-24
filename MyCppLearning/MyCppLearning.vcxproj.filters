@@ -57,19 +57,7 @@
     <ClCompile Include="MyThreadTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MyEventTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MyMutexTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MySingletonTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MyTaskTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MyTestClass_4.cpp">
+    <ClCompile Include="Iterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,10 +80,7 @@
     <ClInclude Include="MyTemplate.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MoveSemantics.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyTestClass_4.h">
+    <ClInclude Include="Iterator.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

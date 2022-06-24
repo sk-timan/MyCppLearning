@@ -161,8 +161,8 @@ int main(void)
 	//TemplateFuncTest();
 	//Func_ThreadTest();
 
-	Iterator::IteratorTest();
-
+	//Iterator::IteratorTest();
+	TIteratorTestFunc();
 	//MutexTest();
 	
 	//SingletonTest();
